@@ -1,13 +1,14 @@
-Cafe Sales Analysis – End-to-End Data Analysis Project
+## Cafe Sales Analysis 
+– End-to-End Data Analysis Project
 A complete data analysis project on a cafe's sales data — covering data cleaning, exploratory analysis, visualizations, and a business dashboard.
 
-Project Structure
+# Project Structure
 ├── Sales.csv                    # Raw (dirty) sales data
 ├── Sales_Cleaned.csv            # Cleaned data (output of Cleaning.ipynb)
 ├── Cleaning.ipynb               # Data cleaning notebook
 └── Cafe_Sales_Analysis.ipynb    # Analysis & visualization notebook
 
-Project Overview
+# Project Overview
 This project analyzes transactional sales data from a cafe to uncover business insights around:
 
 Which items generate the most revenue
@@ -17,12 +18,12 @@ Monthly sales trends and growth rates
 Customer segmentation by spending value
 
 
-Part 1 – Data Cleaning (Cleaning.ipynb)
+## Part 1 – Data Cleaning (Cleaning.ipynb)
 The raw Sales.csv dataset contained various quality issues. The following steps were applied to fix them:
 StepWhat was doneDirty text removalReplaced "ERROR", "UNKNOWN", "" with NaNPrice imputationFilled missing Price Per Unit using an item-to-price lookup mapItem recoveryRecovered "Unknown" items by reverse-mapping from priceNumeric conversionConverted Quantity, Price Per Unit, Total Spent to numericQuantity imputationDerived missing quantity from Total Spent / Price Per UnitTotal Spent recalculationRecalculated Total Spent = Quantity × Price Per Unit for consistencyCategorical cleanupFilled unknown Payment Method → UPI Payment, unknown Location → Online / UnspecifiedDate parsingConverted Transaction Date to datetime and dropped unparseable rowsFeature engineeringExtracted Year, Month, Month Name, Year_Month columnsDuplicate & validity checksRemoved duplicates and rows with invalid/negative quantities
 Output: Sales_Cleaned.csv — a clean, analysis-ready dataset.
 
-Part 2 – Sales Analysis (Cafe_Sales_Analysis.ipynb)
+## Part 2 – Sales Analysis (Cafe_Sales_Analysis.ipynb)
 Key Metrics Computed
 
 Total Sales Revenue
@@ -63,7 +64,7 @@ Customer segmentation (Low / Medium / High Value)
 High-value customer revenue contribution
 
 
-📊 Dashboard
+# Dashboard
 A single-page Manager-View Dashboard was built using Matplotlib & Seaborn, showing:
 
 KPI Cards (Total Sales, Avg Transaction, Total Quantity, Top Item)
@@ -73,7 +74,7 @@ Top 10 Items by Revenue
 Revenue by Customer Segment
 
 
-Key Business Insights
+# Key Business Insights
 
 ✅ Revenue is quantity-driven — higher volume = higher revenue
 ✅ Few items dominate overall sales (Pareto principle applies)
@@ -82,30 +83,7 @@ Key Business Insights
 ✅ High-value transactions contribute a major share of total revenue
 ✅ Location performance varies by footfall and average bill value
 
-
-Tech Stack
-ToolPurposePythonCore languagePandasData manipulation & cleaningNumPyNumerical operationsMatplotlibVisualizations & dashboardSeabornStatistical plotsJupyter NotebookDevelopment environment
-
-How to Run
-
-Clone the repository:
-
-bash   git clone https://github.com/your-username/cafe-sales-analysis.git
-   cd cafe-sales-analysis
-
-Install dependencies:
-
-bash   pip install pandas numpy matplotlib seaborn
-
-Run the notebooks in order:
-
-First: Cleaning.ipynb → generates Sales_Cleaned.csv
-Then: Cafe_Sales_Analysis.ipynb → full analysis & dashboard
-
-
-
-
-Author
+# Author
 Adityamohan Singh
 
 GitHub: @your-username
