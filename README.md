@@ -1,4 +1,4 @@
-## Cafe Sales Analysis 
+# Cafe Sales Analysis 
 – End-to-End Data Analysis Project
 A complete data analysis project on a cafe's sales data — covering data cleaning, exploratory analysis, visualizations, and a business dashboard.
 
@@ -18,12 +18,12 @@ Monthly sales trends and growth rates
 Customer segmentation by spending value
 
 
-## Part 1 – Data Cleaning (Cleaning.ipynb)
+# Part 1 – Data Cleaning (Cleaning.ipynb)
 The raw Sales.csv dataset contained various quality issues. The following steps were applied to fix them:
 StepWhat was doneDirty text removalReplaced "ERROR", "UNKNOWN", "" with NaNPrice imputationFilled missing Price Per Unit using an item-to-price lookup mapItem recoveryRecovered "Unknown" items by reverse-mapping from priceNumeric conversionConverted Quantity, Price Per Unit, Total Spent to numericQuantity imputationDerived missing quantity from Total Spent / Price Per UnitTotal Spent recalculationRecalculated Total Spent = Quantity × Price Per Unit for consistencyCategorical cleanupFilled unknown Payment Method → UPI Payment, unknown Location → Online / UnspecifiedDate parsingConverted Transaction Date to datetime and dropped unparseable rowsFeature engineeringExtracted Year, Month, Month Name, Year_Month columnsDuplicate & validity checksRemoved duplicates and rows with invalid/negative quantities
 Output: Sales_Cleaned.csv — a clean, analysis-ready dataset.
 
-## Part 2 – Sales Analysis (Cafe_Sales_Analysis.ipynb)
+# Part 2 – Sales Analysis (Cafe_Sales_Analysis.ipynb)
 Key Metrics Computed
 
 Total Sales Revenue
