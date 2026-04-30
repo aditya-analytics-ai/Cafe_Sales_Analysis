@@ -85,6 +85,3 @@ Revenue by Customer Segment
 
 # Author
 Adityamohan Singh
-
-GitHub: @your-username
-LinkedIn: your-linkedin
